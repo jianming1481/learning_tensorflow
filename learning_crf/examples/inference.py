@@ -128,6 +128,6 @@ imwrite(fn_output, MAP.reshape(img.shape))
 
 # Just randomly manually run inference iterations
 Q, tmp1, tmp2 = d.startInference()
-for i in range(5):
+for i in range(1):
     print("KL-divergence at {}: {}".format(i, d.klDivergence(Q)))
     d.stepInference(Q, tmp1, tmp2)
